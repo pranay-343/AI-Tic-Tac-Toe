@@ -12,7 +12,8 @@ To optimize the evaluation further, we have also included depth condition. Which
 
 We have prioritized nodes to explore in three ways. First, it will check if an opponent has two or more consecutive markers in any rows, columns and diagonals. If there exists such a condition, then we will add those empty positions to legal moves and return. If such a condition doesn’t exist, then we will play aggressively by checking if the same condition exists for our team or not. If it exists then we will add those empty positions to legal moves and return. And if that condition also doesn’t exist then we will check the opponent's markers position and check other, upto eight, positions and then empty positions will be added to legal moves. If the first move is ours we will pass our marker at 6,6 coordinate.
 
-#Runtime:
+# Runtime
+
 For the first move we are giving a fixed position on the board and after that we are getting board from the server and passing the board to get the best move from our algorithm. We are finding the legal moves that are the empty position nearby the “X” and “O” marker. Once we get all the legal moves then we use our heuristic function to find best positions and then we are passing those best positions to the minimax algorithm which returns the best score value of the corresponding best position.
 
 ![Output](Picture.png)
