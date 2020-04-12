@@ -8,7 +8,7 @@ Minimax is a recursive algorithm which is used to choose an optimal move for a p
 Alpha is the best value that the maximizer currently can guarantee at that level or above.Beta is the best value that the minimizer currently can guarantee at that level or above.
 To optimize the evaluation further, we have also included depth condition. Which means a node will not be explored after a certain depth.
 
-#Evaluation Function:
+# Evaluation Function
 
 We have prioritized nodes to explore in three ways. First, it will check if an opponent has two or more consecutive markers in any rows, columns and diagonals. If there exists such a condition, then we will add those empty positions to legal moves and return. If such a condition doesn’t exist, then we will play aggressively by checking if the same condition exists for our team or not. If it exists then we will add those empty positions to legal moves and return. And if that condition also doesn’t exist then we will check the opponent's markers position and check other, upto eight, positions and then empty positions will be added to legal moves. If the first move is ours we will pass our marker at 6,6 coordinate.
 
